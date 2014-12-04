@@ -49,7 +49,8 @@ To get all items matching a certain service. Note that service and account can b
 DTKeychain *keychain = [DTKeychain sharedInstance];
 
 // create a keychain query for generic passwords
-NSDictionary *query = [DTKeychainGenericPassword keychainItemQueryForService:@"foo" account:nil];
+NSDictionary *query = [DTKeychainGenericPassword keychainItemQueryForService:@"foo" 
+																							account:nil];
 
 // retrieve matching keychain items
 NSError *error;
@@ -66,10 +67,11 @@ iOS and OSX Differences
 
 On iOS keychain items are sandboxed by access group. DTKeychain relies on the build-in system security and does not artificially restrict the items you can query for. This means that you can also query other already existing generic password keychain items, like WiFi passwords on OSX.
 
-On OSX the user is asked for permission for each item you are trying to retrieve the secure data (aka password) for, on iOS access is regulated by the accessiblity parameter. On iOS, DTKeychain can retrieve the passwords for queried items. On OSX, you have to make a separate call to retrieveSecuredDataForKeychainItem:error:
+On OSX the user is asked for permission for each item you are trying to retrieve the secure data (aka password) for, on iOS access is regulated by the accessiblity parameter. On iOS, DTKeychain can retrieve the passwords for queried items. On OSX, you have to make a separate call to `retrieveSecuredDataForKeychainItem:error:`
 
 ```
-// only necessary at an opportune moment on OSX, might cause an access prompt alert to appear
+// only necessary at an opportune moment on OSX, might cause an 
+// access prompt alert to appear
 NSError *error;
 if (![keychain retrieveSecuredDataForKeychainItem:pass error:&error]
 {
