@@ -36,6 +36,14 @@ extern NSString * const DTKeychainErrorDomain;
 - (NSArray *)keychainItemsMatchingQuery:(NSDictionary *)query error:(NSError *__autoreleasing *)error;
 
 /**
+ On OSX the secure data of keychain items needs to be retrieved separately whereas on iOS keychainItemsMatchingQuery:error: already does that. On OSX this triggers a user interaction alert asking the user to permit access for items which have not been created by the current app.
+ @param keychainItem The DTKeychainItem for which to retrieve the secure data
+ @param error An optional output parameter to take on an error if one occurs
+ @returns `YES` if the operation was successful
+ */
+- (BOOL)retrieveSecuredDataForKeychainItem:(DTKeychainItem *)keychainItem error:(NSError *__autoreleasing *)error;
+
+/**
  @name Manipulating Keychain Items
  */
 

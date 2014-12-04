@@ -91,7 +91,18 @@
 	// this can only be done on iOS since on OSX the keychain items are not sandboxed
 	return [_keychain keychainItemsMatchingQuery:[DTKeychainGenericPassword keychainItemQuery] error:error];
 #else
-	return [_keychain keychainItemsMatchingQuery:[DTKeychainGenericPassword keychainItemQueryForService:_service account:nil] error:error];
+	NSArray *items = [_keychain keychainItemsMatchingQuery:[DTKeychainGenericPassword keychainItemQueryForService:_service account:nil] error:error];
+	
+	// need to retrieve passwords, too
+	for (DTKeychainItem *item in items)
+	{
+		if (![_keychain retrieveSecuredDataForKeychainItem:item error:error])
+		{
+			return nil;
+		}
+	}
+	
+	return items;
 #endif
 }
 
