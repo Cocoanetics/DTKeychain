@@ -12,11 +12,13 @@ To create a new generic password:
 // get shared instance
 DTKeychain *keychain = [DTKeychain sharedInstance];
 
+// just create a new instance of the generic password and set values
 DTKeychainGenericPassword *pass = [DTKeychainGenericPassword new];
 pass.account = @"bar";
 pass.service = @"foo";
 pass.password = @"*****";
 
+// write the new object to the keychain
 NSError *error;
 if (![keychain writeKeychainItem:pass error:&error])
 {
