@@ -15,6 +15,7 @@ Pod::Spec.new do |spec|
   spec.subspec 'Core' do |ss|
     ss.ios.deployment_target = '4.3'
     ss.osx.deployment_target = '10.6'
+    ss.frameworks = 'Security'
     ss.source_files = 'Core/Source/*.{h,m}'
   end
 end

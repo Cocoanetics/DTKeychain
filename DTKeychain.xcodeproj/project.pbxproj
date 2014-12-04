@@ -571,6 +571,10 @@
 		A7730F8C1A305FD200CCBB7C /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Core/DTKeychain-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -779,6 +783,10 @@
 		A7858B2E1A3033BE00DAF6D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Core/DTKeychain-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -795,6 +803,10 @@
 		A7858B2F1A3033BE00DAF6D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Core/DTKeychain-Prefix.pch";
 				INFOPLIST_FILE = "";
