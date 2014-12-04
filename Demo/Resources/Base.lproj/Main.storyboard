@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C68m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cBV-lp-4ND">
+                                <rect key="frame" x="197" y="88" width="206" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Fu-S1-rRh">
+                                <rect key="frame" x="197" y="170" width="206" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="206" id="xf4-bW-FWd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Lr-SM-rF9">
+                                <rect key="frame" x="268" y="59" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uF-Xn-1Rs">
+                                <rect key="frame" x="279" y="141" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyB-WU-6a9">
+                                <rect key="frame" x="369" y="227" width="34" height="30"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i1K-al-Kdj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Fu-S1-rRh" firstAttribute="trailing" secondItem="dyB-WU-6a9" secondAttribute="trailing" id="0c5-dq-FPX"/>
+                            <constraint firstItem="5Fu-S1-rRh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BRx-YU-Izy"/>
+                            <constraint firstItem="1Lr-SM-rF9" firstAttribute="centerX" secondItem="5Fu-S1-rRh" secondAttribute="centerX" id="HgA-Ul-3HA"/>
+                            <constraint firstItem="1Lr-SM-rF9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="LeX-3i-RPU"/>
+                            <constraint firstItem="dyB-WU-6a9" firstAttribute="top" secondItem="5Fu-S1-rRh" secondAttribute="bottom" constant="27" id="NeT-FX-I9Q"/>
+                            <constraint firstItem="9uF-Xn-1Rs" firstAttribute="top" secondItem="cBV-lp-4ND" secondAttribute="bottom" constant="23" id="OCa-2L-HVO"/>
+                            <constraint firstItem="5Fu-S1-rRh" firstAttribute="top" secondItem="9uF-Xn-1Rs" secondAttribute="bottom" constant="8" symbolic="YES" id="Wn4-NP-eaM"/>
+                            <constraint firstItem="5Fu-S1-rRh" firstAttribute="leading" secondItem="cBV-lp-4ND" secondAttribute="leading" id="Xmk-n9-WNN"/>
+                            <constraint firstItem="1Lr-SM-rF9" firstAttribute="centerX" secondItem="cBV-lp-4ND" secondAttribute="centerX" id="bpv-Ho-QMF"/>
+                            <constraint firstItem="cBV-lp-4ND" firstAttribute="top" secondItem="1Lr-SM-rF9" secondAttribute="bottom" constant="8" id="h3Y-dC-9Wb"/>
+                            <constraint firstItem="1Lr-SM-rF9" firstAttribute="centerX" secondItem="9uF-Xn-1Rs" secondAttribute="centerX" id="vUP-td-fZd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="accountField" destination="cBV-lp-4ND" id="IpC-sR-2uH"/>
+                        <outlet property="passwordField" destination="5Fu-S1-rRh" id="ERx-R2-sB7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

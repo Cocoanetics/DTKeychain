@@ -1,0 +1,811 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7858B341A3033D700DAF6D0 /* DTKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B0E1A30339700DAF6D0 /* DTKeychain.m */; };
+		A7858B351A3033D700DAF6D0 /* DTKeychainGenericPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B101A30339700DAF6D0 /* DTKeychainGenericPassword.m */; };
+		A7858B361A3033D700DAF6D0 /* DTKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B121A30339700DAF6D0 /* DTKeychainItem.m */; };
+		A7858B391A3033F000DAF6D0 /* libDTKeychain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7858B1C1A3033BE00DAF6D0 /* libDTKeychain.a */; };
+		A7858B3A1A3033F700DAF6D0 /* libDTKeychain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7858B1C1A3033BE00DAF6D0 /* libDTKeychain.a */; };
+		A7858B4C1A30357E00DAF6D0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7858B401A30357E00DAF6D0 /* LaunchScreen.xib */; };
+		A7858B4D1A30357E00DAF6D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7858B421A30357E00DAF6D0 /* Main.storyboard */; };
+		A7858B4E1A30357E00DAF6D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7858B441A30357E00DAF6D0 /* Images.xcassets */; };
+		A7858B4F1A30357E00DAF6D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B471A30357E00DAF6D0 /* AppDelegate.m */; };
+		A7858B501A30357E00DAF6D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B481A30357E00DAF6D0 /* main.m */; };
+		A7858B511A30357E00DAF6D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B4A1A30357E00DAF6D0 /* ViewController.m */; };
+		A7858B561A30363D00DAF6D0 /* DTKeychainTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B0A1A30339700DAF6D0 /* DTKeychainTest.m */; };
+		A7858B681A3038F200DAF6D0 /* libDTKeychain.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A7858B5D1A3038F100DAF6D0 /* libDTKeychain.dylib */; };
+		A7858B741A30390700DAF6D0 /* DTKeychainTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B0A1A30339700DAF6D0 /* DTKeychainTest.m */; };
+		A7858B751A30390E00DAF6D0 /* DTKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B0E1A30339700DAF6D0 /* DTKeychain.m */; };
+		A7858B761A30390E00DAF6D0 /* DTKeychainGenericPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B101A30339700DAF6D0 /* DTKeychainGenericPassword.m */; };
+		A7858B771A30390E00DAF6D0 /* DTKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B121A30339700DAF6D0 /* DTKeychainItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7858AF91A30321600DAF6D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7858AD71A30321500DAF6D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7858ADE1A30321500DAF6D0;
+			remoteInfo = DTKeychainDemo;
+		};
+		A7858B371A3033EB00DAF6D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7858AD71A30321500DAF6D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7858B1B1A3033BE00DAF6D0;
+			remoteInfo = "Static Library (iOS)";
+		};
+		A7858B3B1A3033FB00DAF6D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7858AD71A30321500DAF6D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7858B1B1A3033BE00DAF6D0;
+			remoteInfo = "Static Library (iOS)";
+		};
+		A7858B691A3038F200DAF6D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7858AD71A30321500DAF6D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7858B5C1A3038F100DAF6D0;
+			remoteInfo = "Static Library (OSX)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A7858B1A1A3033BE00DAF6D0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A7730F831A3053D100CCBB7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7730F881A305CFC00CCBB7C /* Change Log-template.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Change Log-template.markdown"; sourceTree = "<group>"; };
+		A7730F891A305E7700CCBB7C /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = SOURCE_ROOT; };
+		A7858ADF1A30321500DAF6D0 /* Demo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7858AF81A30321600DAF6D0 /* Unit Tests (iOS).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests (iOS).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7858B0A1A30339700DAF6D0 /* DTKeychainTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTKeychainTest.m; sourceTree = "<group>"; };
+		A7858B0D1A30339700DAF6D0 /* DTKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTKeychain.h; sourceTree = "<group>"; };
+		A7858B0E1A30339700DAF6D0 /* DTKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTKeychain.m; sourceTree = "<group>"; };
+		A7858B0F1A30339700DAF6D0 /* DTKeychainGenericPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTKeychainGenericPassword.h; sourceTree = "<group>"; };
+		A7858B101A30339700DAF6D0 /* DTKeychainGenericPassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTKeychainGenericPassword.m; sourceTree = "<group>"; };
+		A7858B111A30339700DAF6D0 /* DTKeychainItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTKeychainItem.h; sourceTree = "<group>"; };
+		A7858B121A30339700DAF6D0 /* DTKeychainItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTKeychainItem.m; sourceTree = "<group>"; };
+		A7858B1C1A3033BE00DAF6D0 /* libDTKeychain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDTKeychain.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7858B3E1A30357E00DAF6D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7858B411A30357E00DAF6D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A7858B431A30357E00DAF6D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7858B441A30357E00DAF6D0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A7858B461A30357E00DAF6D0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A7858B471A30357E00DAF6D0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A7858B481A30357E00DAF6D0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A7858B491A30357E00DAF6D0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A7858B4A1A30357E00DAF6D0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A7858B541A3035EE00DAF6D0 /* DTKeychain-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DTKeychain-Prefix.pch"; sourceTree = "<group>"; };
+		A7858B5D1A3038F100DAF6D0 /* libDTKeychain.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libDTKeychain.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7858B671A3038F200DAF6D0 /* Unit Tests (OSX).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests (OSX).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7858ADC1A30321500DAF6D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7858B3A1A3033F700DAF6D0 /* libDTKeychain.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7858AF51A30321600DAF6D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7858B391A3033F000DAF6D0 /* libDTKeychain.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7858B191A3033BE00DAF6D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7858B5A1A3038F100DAF6D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7858B641A3038F200DAF6D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7858B681A3038F200DAF6D0 /* libDTKeychain.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7730F871A305CFC00CCBB7C /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				A7730F881A305CFC00CCBB7C /* Change Log-template.markdown */,
+				A7730F891A305E7700CCBB7C /* README.markdown */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		A7858AD61A30321500DAF6D0 = {
+			isa = PBXGroup;
+			children = (
+				A7730F871A305CFC00CCBB7C /* Documentation */,
+				A7858B0B1A30339700DAF6D0 /* Core */,
+				A7858B3D1A30357E00DAF6D0 /* Demo */,
+				A7858B081A30339700DAF6D0 /* Test */,
+				A7858AE01A30321500DAF6D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7858AE01A30321500DAF6D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7858ADF1A30321500DAF6D0 /* Demo App.app */,
+				A7858AF81A30321600DAF6D0 /* Unit Tests (iOS).xctest */,
+				A7858B1C1A3033BE00DAF6D0 /* libDTKeychain.a */,
+				A7858B5D1A3038F100DAF6D0 /* libDTKeychain.dylib */,
+				A7858B671A3038F200DAF6D0 /* Unit Tests (OSX).xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7858B081A30339700DAF6D0 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				A7730F831A3053D100CCBB7C /* Info.plist */,
+				A7858B091A30339700DAF6D0 /* Source */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		A7858B091A30339700DAF6D0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A7858B0A1A30339700DAF6D0 /* DTKeychainTest.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A7858B0B1A30339700DAF6D0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A7858B541A3035EE00DAF6D0 /* DTKeychain-Prefix.pch */,
+				A7858B0C1A30339700DAF6D0 /* Source */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A7858B0C1A30339700DAF6D0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A7858B0D1A30339700DAF6D0 /* DTKeychain.h */,
+				A7858B0E1A30339700DAF6D0 /* DTKeychain.m */,
+				A7858B0F1A30339700DAF6D0 /* DTKeychainGenericPassword.h */,
+				A7858B101A30339700DAF6D0 /* DTKeychainGenericPassword.m */,
+				A7858B111A30339700DAF6D0 /* DTKeychainItem.h */,
+				A7858B121A30339700DAF6D0 /* DTKeychainItem.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A7858B3D1A30357E00DAF6D0 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				A7858B3E1A30357E00DAF6D0 /* Info.plist */,
+				A7858B3F1A30357E00DAF6D0 /* Resources */,
+				A7858B451A30357E00DAF6D0 /* Source */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		A7858B3F1A30357E00DAF6D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A7858B401A30357E00DAF6D0 /* LaunchScreen.xib */,
+				A7858B421A30357E00DAF6D0 /* Main.storyboard */,
+				A7858B441A30357E00DAF6D0 /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A7858B451A30357E00DAF6D0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A7858B461A30357E00DAF6D0 /* AppDelegate.h */,
+				A7858B471A30357E00DAF6D0 /* AppDelegate.m */,
+				A7858B481A30357E00DAF6D0 /* main.m */,
+				A7858B491A30357E00DAF6D0 /* ViewController.h */,
+				A7858B4A1A30357E00DAF6D0 /* ViewController.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A7858B5B1A3038F100DAF6D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A7858ADE1A30321500DAF6D0 /* Demo App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7858B021A30321600DAF6D0 /* Build configuration list for PBXNativeTarget "Demo App" */;
+			buildPhases = (
+				A7858ADB1A30321500DAF6D0 /* Sources */,
+				A7858ADC1A30321500DAF6D0 /* Frameworks */,
+				A7858ADD1A30321500DAF6D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7858B3C1A3033FB00DAF6D0 /* PBXTargetDependency */,
+			);
+			name = "Demo App";
+			productName = DTKeychainDemo;
+			productReference = A7858ADF1A30321500DAF6D0 /* Demo App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7858AF71A30321600DAF6D0 /* Unit Tests (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7858B051A30321600DAF6D0 /* Build configuration list for PBXNativeTarget "Unit Tests (iOS)" */;
+			buildPhases = (
+				A7858AF41A30321600DAF6D0 /* Sources */,
+				A7858AF51A30321600DAF6D0 /* Frameworks */,
+				A7858AF61A30321600DAF6D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7858B381A3033EB00DAF6D0 /* PBXTargetDependency */,
+				A7858AFA1A30321600DAF6D0 /* PBXTargetDependency */,
+			);
+			name = "Unit Tests (iOS)";
+			productName = DTKeychainDemoTests;
+			productReference = A7858AF81A30321600DAF6D0 /* Unit Tests (iOS).xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7858B1B1A3033BE00DAF6D0 /* Static Library (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7858B2D1A3033BE00DAF6D0 /* Build configuration list for PBXNativeTarget "Static Library (iOS)" */;
+			buildPhases = (
+				A7858B181A3033BE00DAF6D0 /* Sources */,
+				A7858B191A3033BE00DAF6D0 /* Frameworks */,
+				A7858B1A1A3033BE00DAF6D0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Static Library (iOS)";
+			productName = DTKeychain;
+			productReference = A7858B1C1A3033BE00DAF6D0 /* libDTKeychain.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A7858B5C1A3038F100DAF6D0 /* Static Library (OSX) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7858B6E1A3038F200DAF6D0 /* Build configuration list for PBXNativeTarget "Static Library (OSX)" */;
+			buildPhases = (
+				A7858B591A3038F100DAF6D0 /* Sources */,
+				A7858B5A1A3038F100DAF6D0 /* Frameworks */,
+				A7858B5B1A3038F100DAF6D0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Static Library (OSX)";
+			productName = "Static Library (OSX)";
+			productReference = A7858B5D1A3038F100DAF6D0 /* libDTKeychain.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		A7858B661A3038F200DAF6D0 /* Unit Tests (OSX) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7858B711A3038F200DAF6D0 /* Build configuration list for PBXNativeTarget "Unit Tests (OSX)" */;
+			buildPhases = (
+				A7858B631A3038F200DAF6D0 /* Sources */,
+				A7858B641A3038F200DAF6D0 /* Frameworks */,
+				A7858B651A3038F200DAF6D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7858B6A1A3038F200DAF6D0 /* PBXTargetDependency */,
+			);
+			name = "Unit Tests (OSX)";
+			productName = "Static Library (OSX)Tests";
+			productReference = A7858B671A3038F200DAF6D0 /* Unit Tests (OSX).xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7858AD71A30321500DAF6D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Cocoanetics;
+				TargetAttributes = {
+					A7858ADE1A30321500DAF6D0 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					A7858AF71A30321600DAF6D0 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = A7858ADE1A30321500DAF6D0;
+					};
+					A7858B1B1A3033BE00DAF6D0 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					A7858B5C1A3038F100DAF6D0 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					A7858B661A3038F200DAF6D0 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = A7858ADA1A30321500DAF6D0 /* Build configuration list for PBXProject "DTKeychain" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7858AD61A30321500DAF6D0;
+			productRefGroup = A7858AE01A30321500DAF6D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7858ADE1A30321500DAF6D0 /* Demo App */,
+				A7858B1B1A3033BE00DAF6D0 /* Static Library (iOS) */,
+				A7858B5C1A3038F100DAF6D0 /* Static Library (OSX) */,
+				A7858AF71A30321600DAF6D0 /* Unit Tests (iOS) */,
+				A7858B661A3038F200DAF6D0 /* Unit Tests (OSX) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7858ADD1A30321500DAF6D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7858B4D1A30357E00DAF6D0 /* Main.storyboard in Resources */,
+				A7858B4E1A30357E00DAF6D0 /* Images.xcassets in Resources */,
+				A7858B4C1A30357E00DAF6D0 /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7858AF61A30321600DAF6D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7858B651A3038F200DAF6D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7858ADB1A30321500DAF6D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7858B511A30357E00DAF6D0 /* ViewController.m in Sources */,
+				A7858B501A30357E00DAF6D0 /* main.m in Sources */,
+				A7858B4F1A30357E00DAF6D0 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7858AF41A30321600DAF6D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7858B561A30363D00DAF6D0 /* DTKeychainTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7858B181A3033BE00DAF6D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7858B341A3033D700DAF6D0 /* DTKeychain.m in Sources */,
+				A7858B361A3033D700DAF6D0 /* DTKeychainItem.m in Sources */,
+				A7858B351A3033D700DAF6D0 /* DTKeychainGenericPassword.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7858B591A3038F100DAF6D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7858B761A30390E00DAF6D0 /* DTKeychainGenericPassword.m in Sources */,
+				A7858B771A30390E00DAF6D0 /* DTKeychainItem.m in Sources */,
+				A7858B751A30390E00DAF6D0 /* DTKeychain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7858B631A3038F200DAF6D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7858B741A30390700DAF6D0 /* DTKeychainTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7858AFA1A30321600DAF6D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7858ADE1A30321500DAF6D0 /* Demo App */;
+			targetProxy = A7858AF91A30321600DAF6D0 /* PBXContainerItemProxy */;
+		};
+		A7858B381A3033EB00DAF6D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7858B1B1A3033BE00DAF6D0 /* Static Library (iOS) */;
+			targetProxy = A7858B371A3033EB00DAF6D0 /* PBXContainerItemProxy */;
+		};
+		A7858B3C1A3033FB00DAF6D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7858B1B1A3033BE00DAF6D0 /* Static Library (iOS) */;
+			targetProxy = A7858B3B1A3033FB00DAF6D0 /* PBXContainerItemProxy */;
+		};
+		A7858B6A1A3038F200DAF6D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7858B5C1A3038F100DAF6D0 /* Static Library (OSX) */;
+			targetProxy = A7858B691A3038F200DAF6D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A7858B401A30357E00DAF6D0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7858B411A30357E00DAF6D0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		A7858B421A30357E00DAF6D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7858B431A30357E00DAF6D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7858B001A30321600DAF6D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7858B011A30321600DAF6D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7858B031A30321600DAF6D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A7858B041A30321600DAF6D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A7858B061A30321600DAF6D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A7858B071A30321600DAF6D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A7858B2E1A3033BE00DAF6D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Core/DTKeychain-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = DTKeychain;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A7858B2F1A3033BE00DAF6D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Core/DTKeychain-Prefix.pch";
+				INFOPLIST_FILE = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = DTKeychain;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A7858B6F1A3038F200DAF6D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Core/DTKeychain-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = DTKeychain;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A7858B701A3038F200DAF6D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Core/DTKeychain-Prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = DTKeychain;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A7858B721A3038F200DAF6D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Core/DTKeychain-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A7858B731A3038F200DAF6D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Core/DTKeychain-Prefix.pch";
+				INFOPLIST_FILE = Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7858ADA1A30321500DAF6D0 /* Build configuration list for PBXProject "DTKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7858B001A30321600DAF6D0 /* Debug */,
+				A7858B011A30321600DAF6D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7858B021A30321600DAF6D0 /* Build configuration list for PBXNativeTarget "Demo App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7858B031A30321600DAF6D0 /* Debug */,
+				A7858B041A30321600DAF6D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7858B051A30321600DAF6D0 /* Build configuration list for PBXNativeTarget "Unit Tests (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7858B061A30321600DAF6D0 /* Debug */,
+				A7858B071A30321600DAF6D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7858B2D1A3033BE00DAF6D0 /* Build configuration list for PBXNativeTarget "Static Library (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7858B2E1A3033BE00DAF6D0 /* Debug */,
+				A7858B2F1A3033BE00DAF6D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7858B6E1A3038F200DAF6D0 /* Build configuration list for PBXNativeTarget "Static Library (OSX)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7858B6F1A3038F200DAF6D0 /* Debug */,
+				A7858B701A3038F200DAF6D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7858B711A3038F200DAF6D0 /* Build configuration list for PBXNativeTarget "Unit Tests (OSX)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7858B721A3038F200DAF6D0 /* Debug */,
+				A7858B731A3038F200DAF6D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7858AD71A30321500DAF6D0 /* Project object */;
+}
