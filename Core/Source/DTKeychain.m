@@ -118,7 +118,7 @@ NSString * const DTKeychainErrorDomain = @"DTKeychainErrorDomain";
 	}
 }
 
-- (BOOL)_retrieveSecuredDataForKeychainItem:(DTKeychainItem *)keychainItem error:(NSError *__autoreleasing *)error
+- (BOOL)retrieveSecuredDataForKeychainItem:(DTKeychainItem *)keychainItem error:(NSError *__autoreleasing *)error
 {
 	NSDictionary *query = @{(__bridge id)kSecValuePersistentRef: keychainItem.persistentReference,
 									(__bridge id)kSecReturnData: @(YES)};
@@ -181,15 +181,6 @@ NSString * const DTKeychainErrorDomain = @"DTKeychainErrorDomain";
 		for (NSDictionary *oneDict in (__bridge_transfer NSArray *)result)
 		{
 			DTKeychainItem *item = [[class alloc] initWithDictionary:oneDict];
-			
-#if !TARGET_OS_IPHONE
-			// on Mac we need to retrieve the password data individually, as it might trigger user interaction for approving it
-			if (![self _retrieveSecuredDataForKeychainItem:item error:error])
-			{
-				break;
-			}
-#endif
-			
 			[tmpArray addObject:item];
 		}
 		
