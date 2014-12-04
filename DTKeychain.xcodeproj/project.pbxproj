@@ -512,6 +512,136 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A7730F8A1A305FD200CCBB7C /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"COVERAGE=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Coverage;
+		};
+		A7730F8B1A305FD200CCBB7C /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Coverage;
+		};
+		A7730F8C1A305FD200CCBB7C /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Core/DTKeychain-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = DTKeychain;
+				SKIP_INSTALL = YES;
+			};
+			name = Coverage;
+		};
+		A7730F8D1A305FD200CCBB7C /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Core/DTKeychain-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = DTKeychain;
+				SDKROOT = macosx;
+			};
+			name = Coverage;
+		};
+		A7730F8E1A305FD200CCBB7C /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Coverage;
+		};
+		A7730F8F1A305FD200CCBB7C /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Core/DTKeychain-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Coverage;
+		};
 		A7858B001A30321600DAF6D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -755,6 +885,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7858B001A30321600DAF6D0 /* Debug */,
+				A7730F8A1A305FD200CCBB7C /* Coverage */,
 				A7858B011A30321600DAF6D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -764,6 +895,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7858B031A30321600DAF6D0 /* Debug */,
+				A7730F8B1A305FD200CCBB7C /* Coverage */,
 				A7858B041A30321600DAF6D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -773,6 +905,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7858B061A30321600DAF6D0 /* Debug */,
+				A7730F8E1A305FD200CCBB7C /* Coverage */,
 				A7858B071A30321600DAF6D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -782,6 +915,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7858B2E1A3033BE00DAF6D0 /* Debug */,
+				A7730F8C1A305FD200CCBB7C /* Coverage */,
 				A7858B2F1A3033BE00DAF6D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -791,6 +925,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7858B6F1A3038F200DAF6D0 /* Debug */,
+				A7730F8D1A305FD200CCBB7C /* Coverage */,
 				A7858B701A3038F200DAF6D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -800,6 +935,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7858B721A3038F200DAF6D0 /* Debug */,
+				A7730F8F1A305FD200CCBB7C /* Coverage */,
 				A7858B731A3038F200DAF6D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
