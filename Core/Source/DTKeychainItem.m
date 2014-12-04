@@ -50,7 +50,7 @@
 	if ([key isEqualToString:(__bridge __strong id)(kSecClass)])
 	{
 		// should always match my class
-		NSAssert([[[self class] itemClass] isEqualToString:value], @"Trying to set class %@ on item of class %@", value, itemClass);
+		NSAssert([[[self class] itemClass] isEqualToString:value], @"Trying to set class %@ on item of class %@", value, [[self class] itemClass]);
 	}
 	else if ([key isEqualToString:(__bridge __strong id)(kSecValuePersistentRef)])
 	{
