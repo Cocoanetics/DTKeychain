@@ -42,7 +42,7 @@
 		<string>build</string>
 	</array>
 	<key>--index-desc</key>
-	<string>Readme.markdown</string>
+	<string>README.markdown</string>
 	<key>--warn-invalid-crossref</key>
 	<false/>
 </dict>

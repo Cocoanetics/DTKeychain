@@ -1,6 +1,8 @@
 DTKeychain
 ==========
 
+[![Build Status](https://travis-ci.org/Cocoanetics/DTKeychain.png?branch=develop)](https://travis-ci.org/Cocoanetics/DTKeychain) [![Coverage Status](https://coveralls.io/repos/Cocoanetics/DTKeychain/badge.png?branch=develop)](https://coveralls.io/r/Cocoanetics/DTKeychain?branch=develop)
+
 A simple and modern keychain wrapper
 
 How to Use
