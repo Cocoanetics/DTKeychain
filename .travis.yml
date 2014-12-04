@@ -1,0 +1,20 @@
+---
+language: objective-c
+
+before_install: 
+# - brew update
+# - brew upgrade xctool
+
+install: 
+ - sudo easy_install cpp-coveralls
+
+script: 
+ - xctool -project DTKeychain.xcodeproj -scheme "Static Library (OSX)" build -sdk iphonesimulator -arch i386 ONLY_ACTIVE_ARCH=NO
+ 
+ # we need to use xcodebuild for iOS unit testing of keychain until this is fixed in xctool
+ - xcodebuild -project DTKeychain.xcodeproj -scheme "Static Library (iOS)" build test -sdk iphonesimulator -arch i386 ONLY_ACTIVE_ARCH=NO -configuration Coverage
+ 
+ - appledoc -o /tmp .
+
+after_success:
+  - ./coveralls.rb --extension m --exclude-folder Demo --exclude-folder Test --exclude-folder Externals
