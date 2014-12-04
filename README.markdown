@@ -36,7 +36,7 @@ pass.password = @"different";
 NSError *error;
 if (![keychain writeKeychainItem:pass error:&error])
 {
-NSLog(@"%@", [error localizedDescription]);
+   NSLog(@"%@", [error localizedDescription]);
 }
 ```
 
@@ -58,3 +58,10 @@ if (!items)
    NSLog(@"%@", [error localizedDescription]);
 }
 ```
+
+License
+-------
+
+It is open source and covered by a standard 2-clause BSD license. That means you have to mention *Cocoanetics* as the original author of this code and reproduce the LICENSE text inside your app. 
+
+You can purchase a [Non-Attribution-License](http://www.cocoanetics.com/order/?product=DTKeychain%20Non-Attribution%20License) for 75 Euros for not having to include the LICENSE text.
