@@ -5,7 +5,7 @@ DTKeychain
 
 A simple and modern keychain wrapper. This is universal for use on iOS and OSX.
 
-The design goal of this component was to replace a previously used keychain wrapper that had gotten very ugly. It is also meant to be extensible to support additional keychain items in the future: Internet Passwords, Certificates, Identities etc.
+The design goal of this component was to replace a previously used keychain wrapper that had gotten very ugly. It is also meant to be extensible to support additional keychain items in the future: Internet Passwords, Certificates, Identities etc. Do you have a use case for these, let us know!
 
 How to Use
 ==========
