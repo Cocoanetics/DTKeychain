@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'DTKeychain'
-  spec.version      = '1.0.0'
+  spec.version      = '1.0.1'
   spec.summary      = "A simple and modern keychain wrapper."
   spec.homepage     = "https://github.com/Cocoanetics/DTKeychain"
   spec.author       = { "Oliver Drobnik" => "oliver@cocoanetics.com" }
