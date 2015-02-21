@@ -163,7 +163,7 @@
 
 	if (_descriptionText)
 	{
-		tmpDict[(__bridge __strong id)(kSecAttrCreator)] = _descriptionText;
+		tmpDict[(__bridge __strong id)(kSecAttrDescription)] = _descriptionText;
 	}
 	
 	if (_accessibility)
