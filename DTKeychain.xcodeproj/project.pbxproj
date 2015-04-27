@@ -350,7 +350,7 @@
 		A7858AD71A30321500DAF6D0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Cocoanetics;
 				TargetAttributes = {
 					A7858ADE1A30321500DAF6D0 = {
