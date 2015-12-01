@@ -219,7 +219,7 @@ NSString * const DTKeychainErrorDomain = @"DTKeychainErrorDomain";
 	return NO;
 }
 
-- (BOOL)_createKeychainItem:(DTKeychainItem *)keychainItem error:(NSError *__autoreleasing *)error
+- (BOOL)_createKeychainItem:(DTKeychainItem *)keychainItem error:(NSError *__autoreleasing*)error
 {
 	NSMutableDictionary *attributes = [[keychainItem attributesToUpdate] mutableCopy];
 	
