@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E2F713782DA670EDA41DF4994C60E24D56DE4397",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "987CC3CE93795475A8E712443FC6607078BFD1FC" : 0,
+    "E2F713782DA670EDA41DF4994C60E24D56DE4397" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9C0D04EF-F64C-41A7-8A0D-118C8212A476",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "987CC3CE93795475A8E712443FC6607078BFD1FC" : "..",
+    "E2F713782DA670EDA41DF4994C60E24D56DE4397" : "DTKeychain\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DTKeychain",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DTKeychain.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.cocoanetics.com:ics\/proofics.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "987CC3CE93795475A8E712443FC6607078BFD1FC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Cocoanetics\/DTKeychain.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E2F713782DA670EDA41DF4994C60E24D56DE4397"
+    }
+  ]
+}

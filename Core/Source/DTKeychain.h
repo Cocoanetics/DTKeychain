@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Cocoanetics. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 // domain for returned errors
 extern NSString * const DTKeychainErrorDomain;
 
