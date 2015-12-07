@@ -77,6 +77,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		29900D161C157BB800CC5F5A /* DTKeychain.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = DTKeychain.modulemap; sourceTree = "<group>"; };
 		29B809CE1C0EDC5A008C7F88 /* DTKeychain-Umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DTKeychain-Umbrella.h"; sourceTree = "<group>"; };
 		4B520F6D1C0DDF4C0069CA0B /* DTKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DTKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7730F831A3053D100CCBB7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -208,6 +209,7 @@
 		A7858B0B1A30339700DAF6D0 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				29900D161C157BB800CC5F5A /* DTKeychain.modulemap */,
 				29B809CE1C0EDC5A008C7F88 /* DTKeychain-Umbrella.h */,
 				A7858B541A3035EE00DAF6D0 /* DTKeychain-Prefix.pch */,
 				A7858B0C1A30339700DAF6D0 /* Source */,
@@ -397,7 +399,7 @@
 		A7858AD71A30321500DAF6D0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Cocoanetics;
 				TargetAttributes = {
 					4B520F6C1C0DDF4C0069CA0B = {
@@ -594,6 +596,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = Core/DTKeychain.modulemap;
 				PRODUCT_NAME = DTKeychain;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -616,6 +619,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = Core/DTKeychain.modulemap;
 				PRODUCT_NAME = DTKeychain;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -637,6 +641,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = Core/DTKeychain.modulemap;
 				PRODUCT_NAME = DTKeychain;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
