@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		29587BBD1C218F0400B985AC /* Framework-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29587BBC1C218F0400B985AC /* Framework-Info.plist */; };
 		29B809CF1C0EDC5A008C7F88 /* DTKeychain-Umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29B809CE1C0EDC5A008C7F88 /* DTKeychain-Umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B520F761C0DDF720069CA0B /* DTKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B0E1A30339700DAF6D0 /* DTKeychain.m */; };
 		4B520F771C0DDF720069CA0B /* DTKeychainGenericPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B101A30339700DAF6D0 /* DTKeychainGenericPassword.m */; };
@@ -454,7 +453,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29587BBD1C218F0400B985AC /* Framework-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
