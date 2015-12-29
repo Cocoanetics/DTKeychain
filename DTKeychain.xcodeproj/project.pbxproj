@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29B809CF1C0EDC5A008C7F88 /* DTKeychain-Umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29B809CE1C0EDC5A008C7F88 /* DTKeychain-Umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B520F761C0DDF720069CA0B /* DTKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B0E1A30339700DAF6D0 /* DTKeychain.m */; };
+		4B520F771C0DDF720069CA0B /* DTKeychainGenericPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B101A30339700DAF6D0 /* DTKeychainGenericPassword.m */; };
+		4B520F781C0DDF720069CA0B /* DTKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B121A30339700DAF6D0 /* DTKeychainItem.m */; };
+		4B520F791C0DDF7B0069CA0B /* DTKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = A7858B0D1A30339700DAF6D0 /* DTKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B520F7A1C0DDF7B0069CA0B /* DTKeychainGenericPassword.h in Headers */ = {isa = PBXBuildFile; fileRef = A7858B0F1A30339700DAF6D0 /* DTKeychainGenericPassword.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B520F7B1C0DDF7B0069CA0B /* DTKeychainItem.h in Headers */ = {isa = PBXBuildFile; fileRef = A7858B111A30339700DAF6D0 /* DTKeychainItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7858B341A3033D700DAF6D0 /* DTKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B0E1A30339700DAF6D0 /* DTKeychain.m */; };
 		A7858B351A3033D700DAF6D0 /* DTKeychainGenericPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B101A30339700DAF6D0 /* DTKeychainGenericPassword.m */; };
 		A7858B361A3033D700DAF6D0 /* DTKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B121A30339700DAF6D0 /* DTKeychainItem.m */; };
@@ -70,6 +77,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		29587BBC1C218F0400B985AC /* Framework-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Framework-Info.plist"; sourceTree = "<group>"; };
+		29900D161C157BB800CC5F5A /* DTKeychain.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = DTKeychain.modulemap; sourceTree = "<group>"; };
+		29B809CE1C0EDC5A008C7F88 /* DTKeychain-Umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DTKeychain-Umbrella.h"; sourceTree = "<group>"; };
+		4B520F6D1C0DDF4C0069CA0B /* DTKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DTKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7730F831A3053D100CCBB7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7730F881A305CFC00CCBB7C /* Change Log-template.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Change Log-template.markdown"; sourceTree = "<group>"; };
 		A7730F891A305E7700CCBB7C /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = SOURCE_ROOT; };
@@ -98,6 +109,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4B520F691C0DDF4C0069CA0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7858ADC1A30321500DAF6D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -167,6 +185,7 @@
 				A7858B1C1A3033BE00DAF6D0 /* libDTKeychain.a */,
 				A7858B5D1A3038F100DAF6D0 /* libDTKeychain.dylib */,
 				A7858B671A3038F200DAF6D0 /* Unit Tests (OSX).xctest */,
+				4B520F6D1C0DDF4C0069CA0B /* DTKeychain.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,6 +210,9 @@
 		A7858B0B1A30339700DAF6D0 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				29587BBC1C218F0400B985AC /* Framework-Info.plist */,
+				29900D161C157BB800CC5F5A /* DTKeychain.modulemap */,
+				29B809CE1C0EDC5A008C7F88 /* DTKeychain-Umbrella.h */,
 				A7858B541A3035EE00DAF6D0 /* DTKeychain-Prefix.pch */,
 				A7858B0C1A30339700DAF6D0 /* Source */,
 			);
@@ -245,6 +267,17 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4B520F6A1C0DDF4C0069CA0B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29B809CF1C0EDC5A008C7F88 /* DTKeychain-Umbrella.h in Headers */,
+				4B520F791C0DDF7B0069CA0B /* DTKeychain.h in Headers */,
+				4B520F7A1C0DDF7B0069CA0B /* DTKeychainGenericPassword.h in Headers */,
+				4B520F7B1C0DDF7B0069CA0B /* DTKeychainItem.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7858B5B1A3038F100DAF6D0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,6 +288,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		4B520F6C1C0DDF4C0069CA0B /* DTKeychain (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B520F751C0DDF4C0069CA0B /* Build configuration list for PBXNativeTarget "DTKeychain (iOS)" */;
+			buildPhases = (
+				4B520F681C0DDF4C0069CA0B /* Sources */,
+				4B520F691C0DDF4C0069CA0B /* Frameworks */,
+				4B520F6A1C0DDF4C0069CA0B /* Headers */,
+				4B520F6B1C0DDF4C0069CA0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DTKeychain (iOS)";
+			productName = "Framework (iOS)";
+			productReference = 4B520F6D1C0DDF4C0069CA0B /* DTKeychain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		A7858ADE1A30321500DAF6D0 /* Demo App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7858B021A30321600DAF6D0 /* Build configuration list for PBXNativeTarget "Demo App" */;
@@ -350,9 +401,12 @@
 		A7858AD71A30321500DAF6D0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Cocoanetics;
 				TargetAttributes = {
+					4B520F6C1C0DDF4C0069CA0B = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
 					A7858ADE1A30321500DAF6D0 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -389,11 +443,19 @@
 				A7858B5C1A3038F100DAF6D0 /* Static Library (OSX) */,
 				A7858AF71A30321600DAF6D0 /* Unit Tests (iOS) */,
 				A7858B661A3038F200DAF6D0 /* Unit Tests (OSX) */,
+				4B520F6C1C0DDF4C0069CA0B /* DTKeychain (iOS) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4B520F6B1C0DDF4C0069CA0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7858ADD1A30321500DAF6D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -421,6 +483,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4B520F681C0DDF4C0069CA0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B520F761C0DDF720069CA0B /* DTKeychain.m in Sources */,
+				4B520F771C0DDF720069CA0B /* DTKeychainGenericPassword.m in Sources */,
+				4B520F781C0DDF720069CA0B /* DTKeychainItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7858ADB1A30321500DAF6D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -512,6 +584,79 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4B520F721C0DDF4C0069CA0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Core/Framework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = Core/DTKeychain.modulemap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drobnik.DTKeychain;
+				PRODUCT_NAME = DTKeychain;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4B520F731C0DDF4C0069CA0B /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Core/Framework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = Core/DTKeychain.modulemap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drobnik.DTKeychain;
+				PRODUCT_NAME = DTKeychain;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Coverage;
+		};
+		4B520F741C0DDF4C0069CA0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Core/Framework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = Core/DTKeychain.modulemap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drobnik.DTKeychain;
+				PRODUCT_NAME = DTKeychain;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		A7730F8A1A305FD200CCBB7C /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -571,10 +716,6 @@
 		A7730F8C1A305FD200CCBB7C /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					armv7s,
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Core/DTKeychain-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -591,6 +732,7 @@
 		A7730F8D1A305FD200CCBB7C /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
@@ -783,10 +925,6 @@
 		A7858B2E1A3033BE00DAF6D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					armv7s,
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Core/DTKeychain-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -803,10 +941,6 @@
 		A7858B2F1A3033BE00DAF6D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					armv7s,
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Core/DTKeychain-Prefix.pch";
 				INFOPLIST_FILE = "";
@@ -819,6 +953,7 @@
 		A7858B6F1A3038F200DAF6D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
@@ -837,6 +972,7 @@
 		A7858B701A3038F200DAF6D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -893,6 +1029,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4B520F751C0DDF4C0069CA0B /* Build configuration list for PBXNativeTarget "DTKeychain (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B520F721C0DDF4C0069CA0B /* Debug */,
+				4B520F731C0DDF4C0069CA0B /* Coverage */,
+				4B520F741C0DDF4C0069CA0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A7858ADA1A30321500DAF6D0 /* Build configuration list for PBXProject "DTKeychain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
