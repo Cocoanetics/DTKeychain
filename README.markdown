@@ -49,8 +49,7 @@ To get all items matching a certain service. Note that service and account can b
 DTKeychain *keychain = [DTKeychain sharedInstance];
 
 // create a keychain query for generic passwords
-NSDictionary *query = [DTKeychainGenericPassword keychainItemQueryForService:@"foo" 
-																							account:nil];
+NSDictionary *query = [DTKeychainGenericPassword keychainItemQueryForService:@"foo" account:nil];
 
 // retrieve matching keychain items
 NSError *error;
