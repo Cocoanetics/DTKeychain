@@ -88,10 +88,6 @@
 	{
 		[self setValue:value forKey:@"descriptionText"];
 	}
-	else if ([key isEqualToString:(__bridge __strong id)(kSecAttrAccessControl)])
-	{
-		// ignore
-	}
 	else if ([key isEqualToString:(__bridge __strong id)(kSecAttrGeneric)])
 	{
 		_genericAttribute = value;
