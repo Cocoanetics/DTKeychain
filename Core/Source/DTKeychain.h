@@ -9,10 +9,13 @@
 #import <Foundation/Foundation.h>
 
 // domain for returned errors
-extern NSString * const DTKeychainErrorDomain;
+extern NSString * _Nonnull const DTKeychainErrorDomain;
 
 // so that including source only needs DTKeychain.h
 #import "DTKeychainGenericPassword.h"
+
+// proper nullable tags for the NSError **
+#define NullableError NSError * __autoreleasing _Nullable * _Nullable
 
 /**
  Wrapper for the iOS/OSX keychain
@@ -22,7 +25,7 @@ extern NSString * const DTKeychainErrorDomain;
 /**
  The shared instance of DTKeychain
  */
-+ (instancetype)sharedInstance;
++ (nonnull instancetype)sharedInstance;
 
 
 /**
@@ -35,7 +38,7 @@ extern NSString * const DTKeychainErrorDomain;
  @param error An optional output parameter to take on an error if one occurs
  @returns An array of results or `nil` if the query failed
  */
-- (NSArray *)keychainItemsMatchingQuery:(NSDictionary *)query error:(NSError *__autoreleasing *)error;
+- (nullable NSArray<DTKeychainItem *> *)keychainItemsMatchingQuery:(nonnull NSDictionary *)query error:(NullableError)error;
 
 /**
  On OSX the secure data of keychain items needs to be retrieved separately whereas on iOS keychainItemsMatchingQuery:error: already does that. On OSX this triggers a user interaction alert asking the user to permit access for items which have not been created by the current app.
@@ -43,7 +46,7 @@ extern NSString * const DTKeychainErrorDomain;
  @param error An optional output parameter to take on an error if one occurs
  @returns `YES` if the operation was successful
  */
-- (BOOL)retrieveSecuredDataForKeychainItem:(DTKeychainItem *)keychainItem error:(NSError *__autoreleasing *)error;
+- (BOOL)retrieveSecuredDataForKeychainItem:(nonnull DTKeychainItem *)keychainItem error:(NullableError)error;
 
 /**
  @name Manipulating Keychain Items
@@ -55,7 +58,7 @@ extern NSString * const DTKeychainErrorDomain;
  @param error An optional output parameter to take on an error if one occurs
  @returns `YES` if the operation was successful
  */
-- (BOOL)writeKeychainItem:(DTKeychainItem *)keychainItem error:(NSError *__autoreleasing *)error;
+- (BOOL)writeKeychainItem:(nonnull DTKeychainItem *)keychainItem error:(NullableError)error;
 
 /**
  Removes a keychain item from the keychain
@@ -63,7 +66,7 @@ extern NSString * const DTKeychainErrorDomain;
  @param error An optional output parameter to take on an error if one occurs
  @returns `YES` if the operation was successful
  */
-- (BOOL)removeKeychainItem:(DTKeychainItem *)keychainItem error:(NSError *__autoreleasing *)error;
+- (BOOL)removeKeychainItem:(nonnull DTKeychainItem *)keychainItem error:(NullableError)error;
 
 /**
  Removes multiple keychain items from the keychain
@@ -71,6 +74,6 @@ extern NSString * const DTKeychainErrorDomain;
  @param error An optional output parameter to take on an error if one occurs
  @returns `YES` if the operation was successful
  */
-- (BOOL)removeKeychainItems:(NSArray *)keychainItems error:(NSError *__autoreleasing *)error;
+- (BOOL)removeKeychainItems:(nonnull NSArray *)keychainItems error:(NullableError)error;
 
 @end

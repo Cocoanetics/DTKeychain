@@ -14,7 +14,7 @@ NSString * const DTKeychainErrorDomain = @"DTKeychainErrorDomain";
 
 @implementation DTKeychain
 
-+ (instancetype)sharedInstance
++ (nonnull instancetype)sharedInstance
 {
 	static dispatch_once_t onceToken;
 	static DTKeychain *_sharedInstance = nil;
@@ -34,7 +34,7 @@ NSString * const DTKeychainErrorDomain = @"DTKeychainErrorDomain";
 	return [NSError errorWithDomain:DTKeychainErrorDomain code:code userInfo:userInfo];
 }
 
-- (NSError *)_errorForOSStatus:(OSStatus)OSStatus
+- (NSError * __autoreleasing)_errorForOSStatus:(OSStatus)OSStatus
 {
 	switch (OSStatus)
 	{
@@ -118,7 +118,7 @@ NSString * const DTKeychainErrorDomain = @"DTKeychainErrorDomain";
 	}
 }
 
-- (BOOL)retrieveSecuredDataForKeychainItem:(DTKeychainItem *)keychainItem error:(NSError *__autoreleasing *)error
+- (BOOL)retrieveSecuredDataForKeychainItem:(nonnull DTKeychainItem *)keychainItem error:(NullableError)error
 {
 	NSDictionary *query = @{(__bridge id)kSecValuePersistentRef: keychainItem.persistentReference,
 									(__bridge id)kSecReturnData: @(YES)};
@@ -145,7 +145,7 @@ NSString * const DTKeychainErrorDomain = @"DTKeychainErrorDomain";
 
 #pragma mark - Querying for Keychain Items
 
-- (NSArray *)keychainItemsMatchingQuery:(NSDictionary *)query error:(NSError *__autoreleasing *)error
+- (nullable NSArray<DTKeychainItem *> *)keychainItemsMatchingQuery:(nonnull NSDictionary *)query error:(NullableError)error
 {
 	NSMutableDictionary *tmpDict = [query mutableCopy];
 	
@@ -198,7 +198,7 @@ NSString * const DTKeychainErrorDomain = @"DTKeychainErrorDomain";
 
 #pragma mark - Manipulating Keychain Items
 
-- (BOOL)_updateKeychainItem:(DTKeychainItem *)keychainItem error:(NSError *__autoreleasing *)error
+- (BOOL)_updateKeychainItem:(DTKeychainItem *)keychainItem error:(NullableError)error
 {
 	NSDictionary *query = @{(__bridge id)kSecValuePersistentRef: keychainItem.persistentReference};
 	NSDictionary *attributesToUpdate = [keychainItem attributesToUpdate];
@@ -219,7 +219,7 @@ NSString * const DTKeychainErrorDomain = @"DTKeychainErrorDomain";
 	return NO;
 }
 
-- (BOOL)_createKeychainItem:(DTKeychainItem *)keychainItem error:(NSError *__autoreleasing*)error
+- (BOOL)_createKeychainItem:(DTKeychainItem *)keychainItem error:(NullableError)error
 {
 	NSMutableDictionary *attributes = [[keychainItem attributesToUpdate] mutableCopy];
 	
@@ -250,7 +250,7 @@ NSString * const DTKeychainErrorDomain = @"DTKeychainErrorDomain";
 	return NO;
 }
 
-- (BOOL)writeKeychainItem:(DTKeychainItem *)keychainItem error:(NSError *__autoreleasing *)error
+- (BOOL)writeKeychainItem:(nonnull DTKeychainItem *)keychainItem error:(NullableError)error
 {
 	if (keychainItem.persistentReference)
 	{
@@ -262,7 +262,7 @@ NSString * const DTKeychainErrorDomain = @"DTKeychainErrorDomain";
 	}
 }
 
-- (BOOL)removeKeychainItem:(DTKeychainItem *)keychainItem error:(NSError *__autoreleasing *)error
+- (BOOL)removeKeychainItem:(nonnull DTKeychainItem *)keychainItem error:(NullableError)error
 {
 	NSAssert(keychainItem.persistentReference, @"There must be a persistent reference to delete a keychain item!");
 	
@@ -282,7 +282,7 @@ NSString * const DTKeychainErrorDomain = @"DTKeychainErrorDomain";
 	return NO;
 }
 
-- (BOOL)removeKeychainItems:(NSArray *)keychainItems error:(NSError *__autoreleasing *)error
+- (BOOL)removeKeychainItems:(nonnull NSArray *)keychainItems error:(NullableError)error
 {
 	for (DTKeychainItem *item in keychainItems)
 	{

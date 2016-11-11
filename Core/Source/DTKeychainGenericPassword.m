@@ -78,7 +78,7 @@
 
 #pragma mark - Querying
 
-+ (NSDictionary *)keychainItemQueryForService:(NSString *)service account:(NSString *)account
++ (nonnull NSDictionary *)keychainItemQueryForService:(nullable NSString *)service account:(nullable NSString *)account
 {
 	// basic implementation contains item class
 	NSMutableDictionary *tmpDict = [[super keychainItemQuery] mutableCopy];
