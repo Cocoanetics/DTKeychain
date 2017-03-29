@@ -18,7 +18,7 @@
 	NSNumber *_creator; // some items have that on OSX
 }
 
-+ (Class)classForItemClass:(NSString *)itemClass
++ (nullable Class)classForItemClass:(nonnull NSString *)itemClass
 {
 	if ([itemClass isEqualToString:[DTKeychainGenericPassword itemClass]])
 	{
@@ -28,12 +28,12 @@
 	return nil;
 }
 
-+ (NSString *)itemClass
++ (nullable NSString *)itemClass
 {
 	return nil;
 }
 
-- (instancetype)initWithDictionary:(NSDictionary *)dictionary
+- (nonnull instancetype)initWithDictionary:(nonnull NSDictionary *)dictionary
 {
 	self = [super init];
 	
@@ -88,10 +88,14 @@
 	{
 		[self setValue:value forKey:@"descriptionText"];
 	}
-	else if ([key isEqualToString:(__bridge __strong id)(kSecAttrAccessControl)])
+// Ignore warning because on iOS7 this constant might not exist
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wtautological-pointer-compare"
+	else if ((&kSecAttrAccessControl != NULL) && [key isEqualToString:(__bridge __strong id)(kSecAttrAccessControl)])
 	{
 		// ignore
 	}
+#pragma clang diagnostic pop
 	else if ([key isEqualToString:(__bridge __strong id)(kSecAttrGeneric)])
 	{
 		_genericAttribute = value;
@@ -134,14 +138,14 @@
 
 #pragma mark - Querying
 
-+ (NSDictionary *)keychainItemQuery
++ (nonnull NSDictionary *)keychainItemQuery
 {
 	// there must be always an item class present
 	NSString *itemClass = [[self class] itemClass];
 	return @{(__bridge __strong id)(kSecClass): itemClass};
 }
 
-- (NSDictionary *)attributesToUpdate
+- (nonnull NSDictionary *)attributesToUpdate
 {
 	NSMutableDictionary *tmpDict = [NSMutableDictionary dictionary];
 	

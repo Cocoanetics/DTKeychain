@@ -19,12 +19,12 @@
  Instantiates the receiver with a dictionary as returned by a keychain query
  @param dictionary The dictionary as it would come out of keychain queries
  */
-- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+- (nonnull instancetype)initWithDictionary:(nonnull NSDictionary *)dictionary;
 
 /**
  The class of the keychain item. Subclasses need to overwrite this. This determins the secItemClass to be used for keychain queries.
  */
-+ (NSString *)itemClass;
++ (nullable NSString *)itemClass;
 
 
 /**
@@ -32,12 +32,12 @@
  @param itemClass The keychain item class string
  @returns The class to represent items with this item class as
  */
-+ (Class)classForItemClass:(NSString *)itemClass;
++ (nullable Class)classForItemClass:(nonnull NSString *)itemClass;
 
 /**
  Returns the modifyable attributes to write to the keychains for updates or newly created items
  */
-- (NSDictionary *)attributesToUpdate;
+- (nonnull NSDictionary *)attributesToUpdate;
 
 
 /**
@@ -47,7 +47,7 @@
 /**
  A basic query that only contains the item class and should be enhanced with the primary key fields of subclasses.
  */
-+ (NSDictionary *)keychainItemQuery;
++ (nonnull NSDictionary *)keychainItemQuery;
 
 /**
  @name Properties
@@ -56,22 +56,22 @@
 /**
  A persistent reference to the receiver in the keychain. This can be persisted on disk.
  */
-@property (nonatomic, readonly) NSData *persistentReference;
+@property (nonatomic, readonly, nullable) NSData *persistentReference;
 
 /**
  The time the receiver was last modified
  */
-@property (nonatomic, readonly) NSDate *modificationDate;
+@property (nonatomic, readonly, nullable) NSDate *modificationDate;
 
 /**
  The time the receiver was created
  */
-@property (nonatomic, readonly) NSDate *creationDate;
+@property (nonatomic, readonly, nullable) NSDate *creationDate;
 
 /**
  The keychain access group the receiver belongs to. Is usually the app identifier including the group prefix
  */
-@property (nonatomic, readonly) NSString *accessGroup;
+@property (nonatomic, readonly, nullable) NSString *accessGroup;
 
 /**
  Whether the receiver is synchronizable
@@ -81,26 +81,26 @@
 /**
  Under which circumstances the receiver is accessible, see kSecAttrAccessible. Only used on iOS.
  */
-@property (nonatomic, copy, getter=accessibilityMode) NSString *accessibility;
+@property (nonatomic, copy, getter=accessibilityMode, nullable) NSString *accessibility;
 
 /**
  The secure data or the receiver
  */
-@property (nonatomic, copy) NSData *secureData;
+@property (nonatomic, copy, nullable) NSData *secureData;
 
 /**
  A label to describe the item
  */
-@property (nonatomic, copy) NSString *label;
+@property (nonatomic, copy, nullable) NSString *label;
 
 /**
  A comment to describe the item
  */
-@property (nonatomic, copy) NSString *comment;
+@property (nonatomic, copy, nullable) NSString *comment;
 
 /**
  A comment to describe the item
  */
-@property (nonatomic, copy) NSString *descriptionText;
+@property (nonatomic, copy, nullable) NSString *descriptionText;
 
 @end

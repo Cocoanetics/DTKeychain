@@ -23,17 +23,17 @@
 /**
  The name of the service for which the receiver is a password
  */
-@property (nonatomic, copy) NSString *service;
+@property (nonatomic, copy, nonnull) NSString *service;
 
 /**
  The account name of the receiver
  */
-@property (nonatomic, copy) NSString *account;
+@property (nonatomic, copy, nonnull) NSString *account;
 
 /**
  The generic password of the receiver
  */
-@property (nonatomic, copy) NSString *password;
+@property (nonatomic, copy, nullable) NSString *password;
 
 /**
  @name Constructing Queries
@@ -44,6 +44,6 @@
  @param service The optional name of the service
  @param account The optional account name for the query
  */
-+ (NSDictionary *)keychainItemQueryForService:(NSString *)service account:(NSString *)account;
++ (nonnull NSDictionary *)keychainItemQueryForService:(nullable NSString *)service account:(nullable NSString *)account;
 
 @end
