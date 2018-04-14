@@ -670,7 +670,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.drobnik.DTKeychain;
 				PRODUCT_NAME = DTKeychain;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1155,7 +1154,6 @@
 				PRODUCT_NAME = DTKeychain;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
