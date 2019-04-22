@@ -475,7 +475,7 @@
 			};
 			buildConfigurationList = A7858ADA1A30321500DAF6D0 /* Build configuration list for PBXProject "DTKeychain" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
