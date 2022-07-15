@@ -7,8 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "DTKeychain.h"
-#import "DTKeychainGenericPassword.h"
+
+@import DTKeychain;
 
 @interface DTKeychainTest : XCTestCase
 

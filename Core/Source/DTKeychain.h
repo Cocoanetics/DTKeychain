@@ -12,7 +12,7 @@
 extern NSString * _Nonnull const DTKeychainErrorDomain;
 
 // so that including source only needs DTKeychain.h
-#import "DTKeychainGenericPassword.h"
+#import <DTKeychain/DTKeychainGenericPassword.h>
 
 // proper nullable tags for the NSError **
 #define NullableError NSError * __autoreleasing _Nullable * _Nullable

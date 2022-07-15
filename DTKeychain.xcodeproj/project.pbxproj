@@ -17,8 +17,6 @@
 		A7858B341A3033D700DAF6D0 /* DTKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B0E1A30339700DAF6D0 /* DTKeychain.m */; };
 		A7858B351A3033D700DAF6D0 /* DTKeychainGenericPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B101A30339700DAF6D0 /* DTKeychainGenericPassword.m */; };
 		A7858B361A3033D700DAF6D0 /* DTKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B121A30339700DAF6D0 /* DTKeychainItem.m */; };
-		A7858B391A3033F000DAF6D0 /* libDTKeychain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7858B1C1A3033BE00DAF6D0 /* libDTKeychain.a */; };
-		A7858B3A1A3033F700DAF6D0 /* libDTKeychain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7858B1C1A3033BE00DAF6D0 /* libDTKeychain.a */; };
 		A7858B4C1A30357E00DAF6D0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7858B401A30357E00DAF6D0 /* LaunchScreen.xib */; };
 		A7858B4D1A30357E00DAF6D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7858B421A30357E00DAF6D0 /* Main.storyboard */; };
 		A7858B4E1A30357E00DAF6D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7858B441A30357E00DAF6D0 /* Images.xcassets */; };
@@ -26,7 +24,6 @@
 		A7858B501A30357E00DAF6D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B481A30357E00DAF6D0 /* main.m */; };
 		A7858B511A30357E00DAF6D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B4A1A30357E00DAF6D0 /* ViewController.m */; };
 		A7858B561A30363D00DAF6D0 /* DTKeychainTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B0A1A30339700DAF6D0 /* DTKeychainTest.m */; };
-		A7858B681A3038F200DAF6D0 /* libDTKeychain.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A7858B5D1A3038F100DAF6D0 /* libDTKeychain.dylib */; };
 		A7858B741A30390700DAF6D0 /* DTKeychainTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B0A1A30339700DAF6D0 /* DTKeychainTest.m */; };
 		A7858B751A30390E00DAF6D0 /* DTKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B0E1A30339700DAF6D0 /* DTKeychain.m */; };
 		A7858B761A30390E00DAF6D0 /* DTKeychainGenericPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B101A30339700DAF6D0 /* DTKeychainGenericPassword.m */; };
@@ -38,6 +35,9 @@
 		A78F83E01C9B1DEC00F7C7E4 /* DTKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B0E1A30339700DAF6D0 /* DTKeychain.m */; };
 		A78F83E11C9B1DEC00F7C7E4 /* DTKeychainGenericPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B101A30339700DAF6D0 /* DTKeychainGenericPassword.m */; };
 		A78F83E21C9B1DEC00F7C7E4 /* DTKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A7858B121A30339700DAF6D0 /* DTKeychainItem.m */; };
+		A7C9920328818E7600E9CB83 /* DTKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B520F6D1C0DDF4C0069CA0B /* DTKeychain.framework */; };
+		A7C9920628818E9100E9CB83 /* DTKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78F83D31C9B1DA700F7C7E4 /* DTKeychain.framework */; };
+		A7C9920928818FF400E9CB83 /* DTKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B520F6D1C0DDF4C0069CA0B /* DTKeychain.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,26 +48,26 @@
 			remoteGlobalIDString = A7858ADE1A30321500DAF6D0;
 			remoteInfo = DTKeychainDemo;
 		};
-		A7858B371A3033EB00DAF6D0 /* PBXContainerItemProxy */ = {
+		A7C9920028818E6F00E9CB83 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A7858AD71A30321500DAF6D0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A7858B1B1A3033BE00DAF6D0;
-			remoteInfo = "Static Library (iOS)";
+			remoteGlobalIDString = 4B520F6C1C0DDF4C0069CA0B;
+			remoteInfo = "DTKeychain (iOS)";
 		};
-		A7858B3B1A3033FB00DAF6D0 /* PBXContainerItemProxy */ = {
+		A7C9920428818E8B00E9CB83 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A7858AD71A30321500DAF6D0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A7858B1B1A3033BE00DAF6D0;
-			remoteInfo = "Static Library (iOS)";
+			remoteGlobalIDString = A78F83D21C9B1DA700F7C7E4;
+			remoteInfo = "DTKeychain (OSX)";
 		};
-		A7858B691A3038F200DAF6D0 /* PBXContainerItemProxy */ = {
+		A7C9920728818FEB00E9CB83 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A7858AD71A30321500DAF6D0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A7858B5C1A3038F100DAF6D0;
-			remoteInfo = "Static Library (OSX)";
+			remoteGlobalIDString = 4B520F6C1C0DDF4C0069CA0B;
+			remoteInfo = "DTKeychain (iOS)";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -114,6 +114,7 @@
 		A7858B5D1A3038F100DAF6D0 /* libDTKeychain.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libDTKeychain.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7858B671A3038F200DAF6D0 /* Unit Tests (OSX).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests (OSX).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A78F83D31C9B1DA700F7C7E4 /* DTKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DTKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7C991FF28818DB200E9CB83 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7858B3A1A3033F700DAF6D0 /* libDTKeychain.a in Frameworks */,
+				A7C9920928818FF400E9CB83 /* DTKeychain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7858B391A3033F000DAF6D0 /* libDTKeychain.a in Frameworks */,
+				A7C9920328818E7600E9CB83 /* DTKeychain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7858B681A3038F200DAF6D0 /* libDTKeychain.dylib in Frameworks */,
+				A7C9920628818E9100E9CB83 /* DTKeychain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,11 +185,13 @@
 		A7858AD61A30321500DAF6D0 = {
 			isa = PBXGroup;
 			children = (
+				A7C991FF28818DB200E9CB83 /* Package.swift */,
 				A7730F871A305CFC00CCBB7C /* Documentation */,
 				A7858B0B1A30339700DAF6D0 /* Core */,
 				A7858B3D1A30357E00DAF6D0 /* Demo */,
 				A7858B081A30339700DAF6D0 /* Test */,
 				A7858AE01A30321500DAF6D0 /* Products */,
+				A7C9920228818E7600E9CB83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -280,6 +283,13 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		A7C9920228818E7600E9CB83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -344,7 +354,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A7858B3C1A3033FB00DAF6D0 /* PBXTargetDependency */,
+				A7C9920828818FEB00E9CB83 /* PBXTargetDependency */,
 			);
 			name = "Demo App";
 			productName = DTKeychainDemo;
@@ -362,7 +372,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A7858B381A3033EB00DAF6D0 /* PBXTargetDependency */,
+				A7C9920128818E6F00E9CB83 /* PBXTargetDependency */,
 				A7858AFA1A30321600DAF6D0 /* PBXTargetDependency */,
 			);
 			name = "Unit Tests (iOS)";
@@ -415,7 +425,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A7858B6A1A3038F200DAF6D0 /* PBXTargetDependency */,
+				A7C9920528818E8B00E9CB83 /* PBXTargetDependency */,
 			);
 			name = "Unit Tests (OSX)";
 			productName = "Static Library (OSX)Tests";
@@ -457,6 +467,7 @@
 					};
 					A7858AF71A30321600DAF6D0 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = Z7L2YCUH45;
 						TestTargetID = A7858ADE1A30321500DAF6D0;
 					};
 					A7858B1B1A3033BE00DAF6D0 = {
@@ -613,20 +624,20 @@
 			target = A7858ADE1A30321500DAF6D0 /* Demo App */;
 			targetProxy = A7858AF91A30321600DAF6D0 /* PBXContainerItemProxy */;
 		};
-		A7858B381A3033EB00DAF6D0 /* PBXTargetDependency */ = {
+		A7C9920128818E6F00E9CB83 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A7858B1B1A3033BE00DAF6D0 /* Static Library (iOS) */;
-			targetProxy = A7858B371A3033EB00DAF6D0 /* PBXContainerItemProxy */;
+			target = 4B520F6C1C0DDF4C0069CA0B /* DTKeychain (iOS) */;
+			targetProxy = A7C9920028818E6F00E9CB83 /* PBXContainerItemProxy */;
 		};
-		A7858B3C1A3033FB00DAF6D0 /* PBXTargetDependency */ = {
+		A7C9920528818E8B00E9CB83 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A7858B1B1A3033BE00DAF6D0 /* Static Library (iOS) */;
-			targetProxy = A7858B3B1A3033FB00DAF6D0 /* PBXContainerItemProxy */;
+			target = A78F83D21C9B1DA700F7C7E4 /* DTKeychain (OSX) */;
+			targetProxy = A7C9920428818E8B00E9CB83 /* PBXContainerItemProxy */;
 		};
-		A7858B6A1A3038F200DAF6D0 /* PBXTargetDependency */ = {
+		A7C9920828818FEB00E9CB83 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A7858B5C1A3038F100DAF6D0 /* Static Library (OSX) */;
-			targetProxy = A7858B691A3038F200DAF6D0 /* PBXContainerItemProxy */;
+			target = 4B520F6C1C0DDF4C0069CA0B /* DTKeychain (iOS) */;
+			targetProxy = A7C9920728818FEB00E9CB83 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -778,6 +789,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
@@ -827,7 +839,6 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = DTKeychain;
 				SDKROOT = macosx;
 			};
@@ -836,6 +847,7 @@
 		A7730F8E1A305FD200CCBB7C /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = Z7L2YCUH45;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -849,6 +861,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cocoanetics.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo App.app/Demo App";
 			};
 			name = Coverage;
 		};
@@ -868,7 +881,6 @@
 				);
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cocoanetics.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -924,6 +936,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
@@ -974,6 +987,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
@@ -1009,6 +1023,7 @@
 		A7858B061A30321600DAF6D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = Z7L2YCUH45;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1022,12 +1037,14 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cocoanetics.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo App.app/Demo App";
 			};
 			name = Debug;
 		};
 		A7858B071A30321600DAF6D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = Z7L2YCUH45;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1037,6 +1054,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cocoanetics.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo App.app/Demo App";
 			};
 			name = Release;
 		};
@@ -1081,7 +1099,6 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = DTKeychain;
 				SDKROOT = macosx;
 			};
@@ -1097,7 +1114,6 @@
 				EXECUTABLE_PREFIX = lib;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Core/DTKeychain-Prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = DTKeychain;
 				SDKROOT = macosx;
 			};
@@ -1119,7 +1135,6 @@
 				);
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cocoanetics.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1139,7 +1154,6 @@
 				GCC_PREFIX_HEADER = "Core/DTKeychain-Prefix.pch";
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cocoanetics.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1163,7 +1177,6 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Core/Framework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MODULEMAP_FILE = Core/DTKeychain.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = Cocoanetics.DTKeychain;
 				PRODUCT_NAME = DTKeychain;
@@ -1191,7 +1204,6 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Core/Framework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MODULEMAP_FILE = Core/DTKeychain.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = Cocoanetics.DTKeychain;
 				PRODUCT_NAME = DTKeychain;
@@ -1219,7 +1231,6 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Core/Framework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MODULEMAP_FILE = Core/DTKeychain.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = Cocoanetics.DTKeychain;
 				PRODUCT_NAME = DTKeychain;

@@ -12,6 +12,6 @@
 
 #endif /* DTKeychain_Umbrella_h */
 
-#import "DTKeychain.h"
-#import "DTKeychainGenericPassword.h"
-#import "DTKeychainItem.h"
+#import <DTKeychain/DTKeychain.h>
+#import <DTKeychain/DTKeychainGenericPassword.h>
+#import <DTKeychain/DTKeychainItem.h>

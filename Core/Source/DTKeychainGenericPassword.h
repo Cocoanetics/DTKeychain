@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Cocoanetics. All rights reserved.
 //
 
-#import "DTKeychainItem.h"
+#import <DTKeychain/DTKeychainItem.h>
 
 @class DTKeychainItemQuery;
 
